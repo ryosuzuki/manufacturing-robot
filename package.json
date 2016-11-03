@@ -1,0 +1,16 @@
+{
+  "name": "manufacturing-robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cylon": "^1.3.0",
+    "cylon-sphero": "^0.23.0",
+    "johnny-five": "^0.10.3"
+  }
+}

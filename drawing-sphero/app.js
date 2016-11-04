@@ -1,8 +1,6 @@
 var Cylon = require('cylon');
 // Express requires these dependencies
 var express = require('express')
-, routes = require('./routes')
-, user = require('./routes/user')
 , http = require('http')
 , path = require('path');
 
@@ -29,7 +27,7 @@ app.configure('development', function(){
 // Setup Routes
 app.get('/', function(req, res){
   res.render('index', { title: 'Express' });
-};
+});
 app.use(express.urlencoded());
 
 // Enable Socket.io
@@ -82,7 +80,7 @@ Cylon.robot({
       my.sphero.detectLocator();
     });
 
-     my.sphero.on('data', function(data) {
+    my.sphero.on('data', function(data) {
       var x = data[0];
       var y = data[1];
       var z = data[2];
